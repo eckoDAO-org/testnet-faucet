@@ -1,5 +1,6 @@
 import { Token } from "@/utils/types";
 import kdxLogo from "@/assets/kdx-crypto.svg";
+import kdaLogo from "@/assets/kda-crypto.svg";
 
 export const GAS_PAYER_PUBLIC_KEY =
   "ae4a8b6f0d2758c2d8a1ccf82acb97fd64b5bfe365a3b593c545b86038caee45";
@@ -16,6 +17,17 @@ export const TOKENS: { [key: string]: Token } = {
     faucetAccountPublicKey:
       "ae4a8b6f0d2758c2d8a1ccf82acb97fd64b5bfe365a3b593c545b86038caee45",
     faucetAmount: 50.0,
+  },
+  KDA: {
+    name: "Kadena",
+    symbol: "KDA",
+    module: "coin",
+    logo: kdaLogo,
+    faucetAccount:
+      "k:650914f2ce15c4d8991c9900d57d981b711e5ac06ca23ed4c1d8121c6f48a0ba",
+    faucetAccountPublicKey:
+      "650914f2ce15c4d8991c9900d57d981b711e5ac06ca23ed4c1d8121c6f48a0ba",
+    faucetAmount: 2.0,
   },
   ABC: {
     name: "ABC",

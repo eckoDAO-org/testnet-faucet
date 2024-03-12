@@ -39,6 +39,10 @@ export const getFaucetPrivateKey = (tokenSymbol: string): string => {
       if (!process.env.NEXT_PUBLIC_KDX_FAUCET_PRIVATE_KEY)
         throw new Error("Misisng token env arg");
       return process.env.NEXT_PUBLIC_KDX_FAUCET_PRIVATE_KEY;
+    case "KDA":
+      if (!process.env.NEXT_PUBLIC_KDA_FAUCET_PRIVATE_KEY)
+        throw new Error("Misisng token env arg");
+      return process.env.NEXT_PUBLIC_KDA_FAUCET_PRIVATE_KEY;
     case "ABC":
       if (!process.env.NEXT_PUBLIC_ABC_FAUCET_PRIVATE_KEY)
         throw new Error("Misisng token env arg");
